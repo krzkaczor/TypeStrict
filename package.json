@@ -1,6 +1,6 @@
 {
   "name": "typestrict",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "./tslint.js",
   "license": "MIT",
   "devDependencies": {
