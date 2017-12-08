@@ -1,0 +1,14 @@
+{
+  "name": "TypeStrict",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "tslint-microsoft-contrib": "^5.0.1",
+    "tslint-sonarts": "^1.2.0"
+  }
+}
