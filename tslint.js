@@ -1,9 +1,11 @@
-{
-  "rulesDirectory": [
-    "./node_modules/tslint-sonarts/lib/rules",
-    "./node_modules/tslint-microsoft-contrib"
-  ],
-  "rules": {
+const { join, dirname } = require("path");
+
+const sonarTsRoot = dirname(require.resolve("tslint-sonarts"));
+const microsoftContribRoot = dirname(require.resolve("tslint-microsoft-contrib"));
+
+module.exports = {
+  rulesDirectory: [join(sonarTsRoot, "lib/rules"), microsoftContribRoot],
+  rules: {
     /* tslint */
     "await-promise": [true, "Bluebird"],
     "no-floating-promises": [true, "Bluebird"],
@@ -41,4 +43,4 @@
     /* microsoft-contrib */
     "promise-must-complete": true
   }
-}
+};
