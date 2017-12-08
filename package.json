@@ -1,7 +1,7 @@
 {
-  "name": "TypeStrict",
+  "name": "typestrict",
   "version": "0.0.2",
-  "main": "index.js",
+  "main": "./tslint.json",
   "license": "MIT",
   "devDependencies": {
     "tslint": "^5.8.0",
