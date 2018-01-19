@@ -31,7 +31,6 @@ module.exports = {
     "no-identical-expressions": true,
     "no-ignored-return": true,
     "no-multiline-string-literals": true,
-    "no-same-line-conditional": true,
     "no-self-assignment": true,
     "no-unconditional-jump": true,
     "no-unthrown-error": true,
