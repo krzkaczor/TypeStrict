@@ -43,7 +43,7 @@ care about code style or formatting.
 
 * [await-promise](https://palantir.github.io/tslint/rules/await-promise/)
 * [no-floating-promises](https://palantir.github.io/tslint/rules/no-floating-promises/)
-* [no-unused-variable](https://palantir.github.io/tslint/rules/no-unused-variable/)
+* [no-unused-variable](https://palantir.github.io/tslint/rules/no-unused-variable/) (with `"check-parameters"` and `{"ignore-pattern": "^_" }`)
 * [no-use-before-declare](https://palantir.github.io/tslint/rules/no-use-before-declare/)
 * [no-duplicate-super](https://palantir.github.io/tslint/rules/no-duplicate-super/)
 * [no-inferred-empty-object-type](https://palantir.github.io/tslint/rules/no-inferred-empty-object-type/)
