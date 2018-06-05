@@ -208,9 +208,9 @@ tslint-microsoft-contrib@^5.0.3:
   dependencies:
     tsutils "^2.12.1"
 
-tslint-sonarts@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.6.0.tgz#b21366029d83e2426d207174255bb2e09525e162"
+tslint-sonarts@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/tslint-sonarts/-/tslint-sonarts-1.7.0.tgz#1bcaf9f524c86b8d4cf9a2afae736edffd2e0dea"
   dependencies:
     immutable "^3.8.2"
 
@@ -237,9 +237,9 @@ tsutils@^2.12.1:
   dependencies:
     tslib "^1.8.1"
 
-typescript@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
+typescript@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.1.tgz#fdb19d2c67a15d11995fd15640e373e09ab09961"
 
 wrappy@1:
   version "1.0.2"

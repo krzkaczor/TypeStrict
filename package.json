@@ -5,11 +5,11 @@
   "license": "MIT",
   "devDependencies": {
     "tslint": "^5.9.1",
-    "typescript": "^2.6.2"
+    "typescript": "^2.9.1"
   },
   "dependencies": {
     "tslint-microsoft-contrib": "^5.0.3",
-    "tslint-sonarts": "^1.6.0"
+    "tslint-sonarts": "^1.7.0"
   },
   "repository": "https://github.com/krzkaczor/TypeStrict"
 }
