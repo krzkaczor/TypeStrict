@@ -9,7 +9,6 @@ module.exports = {
     /* tslint */
     "await-promise": [true, "Bluebird"],
     "no-floating-promises": [true, "Bluebird"],
-    "no-unused-variable": [true, "check-parameters", { "ignore-pattern": "^_" }],
     "no-use-before-declare": true,
     "no-duplicate-super": true,
     "no-inferred-empty-object-type": true,
