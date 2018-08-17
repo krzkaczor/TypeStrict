@@ -1,5 +1,13 @@
 {
   "name": "typestrict",
+  "description": "Tslint config focused on maximizing type safety",
+  "keywords": [
+    "typescript",
+    "tslint",
+    "type safety",
+    "ruleset",
+    "types"
+  ],
   "version": "0.0.9",
   "main": "./tslint.js",
   "license": "MIT",
