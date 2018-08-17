@@ -1,8 +1,9 @@
 <p align="center">
   <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/129/bug_1f41b.png" width="120" alt="TypeStrict">
-  <h3 align="center">TypeStrict</h3>
+  <h3 align="center">TypeStrict</h3> 
   <p align="center">Squash bugs before shipping them with Typescript and TSlint!</p>
   <p align="center">Tslint config focused on maximizing type safety</p>
+  <img alt="Downloads" src="https://img.shields.io/npm/dm/typestrict.svg">
 </p>
 
 # Installation
@@ -31,6 +32,8 @@ Create `tslint.json`:
 and run `tslint -c ./tslint.json --project ./tsconfig.json --format stylish`.
 
 Remember to use `strict` compiler setting in `tsconfig.json`!
+
+*Ignore warning about deprecated rule, it's discussed [here](https://github.com/krzkaczor/TypeStrict/pull/4)*
 
 # Description
 
