@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/129/bug_1f41b.png" width="120" alt="TypeStrict">
   <h3 align="center">TypeStrict</h3> 
-  <p align="center">Squash bugs before shipping them with Typescript and TSLint!</p>
+  <p align="center">Squash bugs before shipping them with TypeScript and TSLint!</p>
   <p align="center">TSLint config focused on maximizing type safety</p>
   <p align="center">
     <img alt="Downloads" src="https://img.shields.io/npm/dm/typestrict.svg">
