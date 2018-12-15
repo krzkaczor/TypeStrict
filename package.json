@@ -1,6 +1,6 @@
 {
   "name": "typestrict",
-  "description": "Tslint config focused on maximizing type safety",
+  "description": "TSLint config focused on maximizing type safety",
   "keywords": [
     "typescript",
     "tslint",
