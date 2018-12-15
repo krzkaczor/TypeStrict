@@ -4,7 +4,7 @@ const sonarTsRoot = dirname(require.resolve("tslint-sonarts"));
 const microsoftContribRoot = dirname(require.resolve("tslint-microsoft-contrib"));
 
 module.exports = {
-  rulesDirectory: [join(sonarTsRoot, "lib/rules"), microsoftContribRoot],
+  rulesDirectory: [join(sonarTsRoot, "lib", "rules"), microsoftContribRoot],
   rules: {
     /* tslint */
     "await-promise": [true, "Bluebird"],
