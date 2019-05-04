@@ -8,6 +8,9 @@
     "ruleset",
     "types"
   ],
+  "files": [
+    "tslint.js"
+  ],
   "version": "1.0.2",
   "main": "./tslint.js",
   "license": "MIT",
