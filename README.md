@@ -53,20 +53,20 @@ care about code style or formatting.
 ### TSLint
 
 - [await-promise](https://palantir.github.io/tslint/rules/await-promise/)
-- [no-floating-promises](https://palantir.github.io/tslint/rules/no-floating-promises/)
-- [no-unused-variable](https://palantir.github.io/tslint/rules/no-unused-variable/) (with `"check-parameters"` and `{"ignore-pattern": "^_" }`)
-- [no-use-before-declare](https://palantir.github.io/tslint/rules/no-use-before-declare/)
+- [invalid-void](https://palantir.github.io/tslint/rules/invalid-void/)
+- [no-async-without-await](https://palantir.github.io/tslint/rules/no-async-without-await/)
 - [no-duplicate-super](https://palantir.github.io/tslint/rules/no-duplicate-super/)
+- [no-floating-promises](https://palantir.github.io/tslint/rules/no-floating-promises/)
+- [no-for-in](https://palantir.github.io/tslint/rules/no-for-in/)
 - [no-inferred-empty-object-type](https://palantir.github.io/tslint/rules/no-inferred-empty-object-type/)
 - [no-invalid-this](https://palantir.github.io/tslint/rules/no-invalid-this/)
 - [no-misused-new](https://palantir.github.io/tslint/rules/no-misused-new/)
-- [restrict-plus-operands](https://palantir.github.io/tslint/rules/restrict-plus-operands/)
-- [use-isnan](https://palantir.github.io/tslint/rules/use-isnan/)
-- [no-async-without-await](https://palantir.github.io/tslint/rules/no-async-without-await/)
 - [no-promise-as-boolean](https://palantir.github.io/tslint/rules/no-promise-as-boolean/)
-- [no-for-in](https://palantir.github.io/tslint/rules/no-for-in/)
-- [invalid-void](https://palantir.github.io/tslint/rules/invalid-void/)
+- [no-unused-variable](https://palantir.github.io/tslint/rules/no-unused-variable/) (with `"check-parameters"` and `{"ignore-pattern": "^_" }`)
+- [no-use-before-declare](https://palantir.github.io/tslint/rules/no-use-before-declare/)
+- [restrict-plus-operands](https://palantir.github.io/tslint/rules/restrict-plus-operands/)
 - [strict-comparisons](https://palantir.github.io/tslint/rules/strict-comparisons/)
+- [use-isnan](https://palantir.github.io/tslint/rules/use-isnan/)
 
 ### SonarTS
 
