@@ -53,8 +53,6 @@ care about code style or formatting.
 ### TSLint
 
 - [await-promise](https://palantir.github.io/tslint/rules/await-promise/)
-- [invalid-void](https://palantir.github.io/tslint/rules/invalid-void/)
-- [no-async-without-await](https://palantir.github.io/tslint/rules/no-async-without-await/)
 - [no-duplicate-super](https://palantir.github.io/tslint/rules/no-duplicate-super/)
 - [no-floating-promises](https://palantir.github.io/tslint/rules/no-floating-promises/)
 - [no-for-in](https://palantir.github.io/tslint/rules/no-for-in/)

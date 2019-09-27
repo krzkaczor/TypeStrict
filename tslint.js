@@ -8,8 +8,6 @@ module.exports = {
   rules: {
     /* tslint */
     "await-promise": [true, "Bluebird"],
-    "invalid-void": true,
-    "no-async-without-await": true,
     "no-duplicate-super": true,
     "no-floating-promises": [true, "Bluebird"],
     "no-for-in": true,
