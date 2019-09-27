@@ -17,6 +17,11 @@ module.exports = {
     "no-misused-new": true,
     "restrict-plus-operands": true,
     "use-isnan": true,
+    "no-async-without-await": true,
+    "no-promise-as-boolean": true,
+    "no-for-in": true,
+    "invalid-void": true,
+    "strict-comparisons": true,
 
     /* sonarts */
     "no-accessor-field-mismatch": true,

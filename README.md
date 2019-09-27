@@ -62,6 +62,11 @@ care about code style or formatting.
 - [no-misused-new](https://palantir.github.io/tslint/rules/no-misused-new/)
 - [restrict-plus-operands](https://palantir.github.io/tslint/rules/restrict-plus-operands/)
 - [use-isnan](https://palantir.github.io/tslint/rules/use-isnan/)
+- [no-async-without-await](https://palantir.github.io/tslint/rules/no-async-without-await/)
+- [no-promise-as-boolean](https://palantir.github.io/tslint/rules/no-promise-as-boolean/)
+- [no-for-in](https://palantir.github.io/tslint/rules/no-for-in/)
+- [invalid-void](https://palantir.github.io/tslint/rules/invalid-void/)
+- [strict-comparisons](https://palantir.github.io/tslint/rules/strict-comparisons/)
 
 ### SonarTS
 
