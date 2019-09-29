@@ -8,14 +8,17 @@ module.exports = {
   rules: {
     /* tslint */
     "await-promise": [true, "Bluebird"],
-    "no-floating-promises": [true, "Bluebird"],
-    "no-unused-variable": [true, "check-parameters", { "ignore-pattern": "^_" }],
-    "no-use-before-declare": true,
     "no-duplicate-super": true,
+    "no-floating-promises": [true, "Bluebird"],
+    "no-for-in": true,
     "no-inferred-empty-object-type": true,
     "no-invalid-this": true,
     "no-misused-new": true,
+    "no-promise-as-boolean": true,
+    "no-unused-variable": [true, "check-parameters", { "ignore-pattern": "^_" }],
+    "no-use-before-declare": true,
     "restrict-plus-operands": true,
+    "strict-comparisons": true,
     "use-isnan": true,
 
     /* sonarts */
