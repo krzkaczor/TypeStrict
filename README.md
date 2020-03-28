@@ -1,8 +1,8 @@
 <p align="center">
   <img src="/images/logo.png" width="120" alt="TypeStrict">
   <h3 align="center">TypeStrict</h3> 
-  <p align="center">Squash bugs before shipping them with TypeScript and TSLint!</p>
-  <p align="center">TSLint config focused on maximizing type safety</p>
+  <p align="center">Squash bugs before shipping them with TypeScript and ESLint!</p>
+  <p align="center">ESLint config focused on maximizing type safety</p>
   <p align="center">
     <img alt="Downloads" src="https://img.shields.io/npm/dm/typestrict.svg">
     <a href="/package.json"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
@@ -13,18 +13,14 @@
 # Installation
 
 ```bash
-npm install --save-dev typestrict
+npm install --save-dev @typescript-eslint/eslint-plugin eslint-plugin-sonarjs eslint-config-typestrict
 ```
 
-or
-
-```bash
-yarn add --dev typestrict
-```
+👉 If you still use tslint please use typestrict@1
 
 # Usage
 
-Create `tslint.json`:
+In your `.eslintrc.json`:
 
 ```json
 {
@@ -33,64 +29,44 @@ Create `tslint.json`:
 }
 ```
 
-and run `tslint -c ./tslint.json --project ./tsconfig.json --format stylish`.
+Unfortunatelly, you need to install plugins that we depend on manually: `@typescript-eslint/eslint-plugin`, `eslint-plugin-sonarjs`
 
 Remember to use `strict` compiler setting in `tsconfig.json`!
-
-_Please, for now ignore warning about deprecated rule, it's discussed [here](https://github.com/krzkaczor/TypeStrict/pull/4)_
 
 # Description
 
 All rules in this config are focused on catching bugs in your code and be as not annoying as possible. They don't
-care about code style or formatting.
+care about your code style or formatting.
 
-`TypeStrict` combines rules from various rule sets: [tslint](https://palantir.github.io/tslint/rules/),
-[sonarTS](https://github.com/SonarSource/SonarTS),
-[tslint-microsoft-contrib](https://github.com/Microsoft/tslint-microsoft-contrib).
+`TypeStrict` combines rules from various rule sets: [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin),
+[sonarJS](https://github.com/SonarSource/SonarJS),
 
 ## Complete rules list
 
-### TSLint
+### ESLint
 
-- [await-promise](https://palantir.github.io/tslint/rules/await-promise/)
-- [no-duplicate-super](https://palantir.github.io/tslint/rules/no-duplicate-super/)
-- [no-floating-promises](https://palantir.github.io/tslint/rules/no-floating-promises/)
-- [no-for-in](https://palantir.github.io/tslint/rules/no-for-in/)
-- [no-inferred-empty-object-type](https://palantir.github.io/tslint/rules/no-inferred-empty-object-type/)
-- [no-invalid-this](https://palantir.github.io/tslint/rules/no-invalid-this/)
-- [no-misused-new](https://palantir.github.io/tslint/rules/no-misused-new/)
-- [no-promise-as-boolean](https://palantir.github.io/tslint/rules/no-promise-as-boolean/)
-- [no-unused-variable](https://palantir.github.io/tslint/rules/no-unused-variable/) (with `"check-parameters"` and `{"ignore-pattern": "^_" }`)
-- [no-use-before-declare](https://palantir.github.io/tslint/rules/no-use-before-declare/)
-- [restrict-plus-operands](https://palantir.github.io/tslint/rules/restrict-plus-operands/)
-- [strict-comparisons](https://palantir.github.io/tslint/rules/strict-comparisons/)
-- [use-isnan](https://palantir.github.io/tslint/rules/use-isnan/)
+- [constructor-super](https://eslint.org/docs/rules/constructor-super)
+- [no-invalid-this](https://eslint.org/docs/rules/no-invalid-this)
+- [no-restricted-syntax](https://eslint.org/docs/rules/no-restricted-syntax) (with `"check-parameters"` and `{"ignore-pattern": "^_" }`)
+- [use-isnan](https://eslint.org/docs/rules/use-isnan)
+
+### TypeScript ESLint
+
+- [@typescript-eslint/no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md) with `{"argsIgnorePattern": "^_"}`
+- [@typescript-eslint/await-thenable](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/await-thenable.md)
+- [@typescript-eslint/no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-floating-promises.md)
+- [@typescript-eslint/no-misused-new](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-misused-new.md)
+- [@typescript-eslint/no-use-before-define](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md)
+- [@typescript-eslint/restrict-plus-operands](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md)
 
 ### SonarTS
 
-- [no-accessor-field-mismatch](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-accessor-field-mismatch.md)
-- [no-all-duplicated-branches](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-all-duplicated-branches.md)
-- [no-collection-size-mischeck](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-collection-size-mischeck.md)
-- [no-dead-store](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-dead-store.md)
-- [no-duplicated-branches](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-duplicated-branches.md)
-- [no-element-overwrite](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-element-overwrite.md)
-- [no-empty-destructuring](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-empty-destructuring.md)
-- [no-gratuitous-expressions](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-gratuitous-expressions.md)
-- [no-identical-conditions](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-identical-conditions.md)
-- [no-identical-expressions](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-identical-expressions.md)
-- [no-ignored-return](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-ignored-return.md)
-- [no-multiline-string-literals](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-multiline-string-literals.md)
-- [no-self-assignment](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-self-assignment.md)
-- [no-unconditional-jump](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-unconditional-jump.md)
-- [no-unthrown-error](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-unthrown-error.md)
-- [no-unused-array](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-unused-array.md)
-- [no-useless-cast](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-useless-cast.md)
-- [no-useless-increment](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-useless-increment.md)
-- [no-variable-usage-before-declaration](https://github.com/SonarSource/SonarTS/blob/e769787246f952ae0fc23dd1d3feb7dac5d27fb3/sonarts-core/docs/rules/no-variable-usage-before-declaration.md)
-
-### Microsoft Contrib
-
-- [promise-must-complete](https://github.com/Microsoft/tslint-microsoft-contrib/issues/34)
+- [no-all-duplicated-branches](https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-all-duplicated-branches.md)
+- [no-collection-size-mischeck](https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-collection-size-mischeck.md)
+- [no-duplicated-branches](https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-duplicated-branches.md)
+- [no-element-overwrite](https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-element-overwrite.md)
+- [no-identical-conditions](https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-identical-conditions.md)
+- [no-identical-expressions](https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-identical-expressions.md)
 
 # Contributing
 
