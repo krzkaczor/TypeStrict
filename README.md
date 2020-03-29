@@ -29,7 +29,7 @@ In your `.eslintrc.json`:
 }
 ```
 
-Unfortunatelly, you need to install plugins that we depend on manually: `@typescript-eslint/eslint-plugin`, `eslint-plugin-sonarjs`
+Unfortunately, you need to install plugins that we depend on manually: `@typescript-eslint/eslint-plugin`, `eslint-plugin-sonarjs`
 
 Remember to use `strict` compiler setting in `tsconfig.json`!
 
