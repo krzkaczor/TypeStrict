@@ -16,7 +16,7 @@
 npm install --save-dev @typescript-eslint/eslint-plugin eslint-plugin-sonarjs eslint-config-typestrict
 ```
 
-👉 If you still use tslint please use typestrict@1
+👉 If you still use TSLint please use [typestrict@1](https://github.com/krzkaczor/TypeStrict/tree/838c8eaa599e349327d5eba8f40f70d572dc3be0)
 
 # Usage
 
