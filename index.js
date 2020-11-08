@@ -22,6 +22,7 @@ module.exports = {
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
+    "@typescript-eslint/no-unnecessary-condition": ["error", { "allowConstantLoopConditions": true }],
 
     // sonarts
     "sonarjs/no-all-duplicated-branches": "error",
