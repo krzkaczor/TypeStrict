@@ -11,18 +11,22 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
-        "args": "after-used",
-        "ignoreRestSiblings": true,
-        "vars": "all",
-        "argsIgnorePattern": "^_"
-      }
+        args: "after-used",
+        ignoreRestSiblings: true,
+        vars: "all",
+        varsIgnorePattern: "^_",
+        argsIgnorePattern: "^_",
+      },
     ],
     "@typescript-eslint/await-thenable": "error",
     "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
-    "@typescript-eslint/no-unnecessary-condition": ["error", { "allowConstantLoopConditions": true }],
+    "@typescript-eslint/no-unnecessary-condition": [
+      "error",
+      { allowConstantLoopConditions: true },
+    ],
 
     // sonarts
     "sonarjs/no-all-duplicated-branches": "error",
@@ -30,7 +34,7 @@ module.exports = {
     "sonarjs/no-collection-size-mischeck": "error",
     "sonarjs/no-duplicated-branches": "error",
     "sonarjs/no-identical-conditions": "error",
-    "sonarjs/no-identical-expressions": "error"
+    "sonarjs/no-identical-expressions": "error",
 
     // sonarTS rules that are not yet part of sonarJS
     // we can enable them once they are implemented or find a replacement
@@ -50,5 +54,5 @@ module.exports = {
     //       "sonarjs/no-useless-increment": "error",
     //       "sonarjs/promise-must-complete": "error",
     //       "sonarjs/strict-comparisons": "error"
-  }
+  },
 };
