@@ -3,7 +3,8 @@ module.exports = {
   rules: {
     // basics
     "constructor-super": "error",
-    "no-invalid-this": "error",
+    "no-invalid-this": "off",
+    "@typescript-eslint/no-invalid-this": ["error"],
     "no-restricted-syntax": ["error", "ForInStatement"],
     "use-isnan": "error",
 
@@ -23,10 +24,7 @@ module.exports = {
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
-    "@typescript-eslint/no-unnecessary-condition": [
-      "error",
-      { allowConstantLoopConditions: true },
-    ],
+    "@typescript-eslint/no-unnecessary-condition": ["error", { allowConstantLoopConditions: true }],
 
     // sonarts
     "sonarjs/no-all-duplicated-branches": "error",
